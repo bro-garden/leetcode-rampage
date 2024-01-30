@@ -5,9 +5,7 @@
  * @param {number} n
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
- var merge = function(nums1, m, nums2, n) {
-    const auxArr = [...nums1];
-   
+ var merge = function(nums1, m, nums2, n) {   
    nums2.forEach((num,i)=>{
        nums1.splice(m+i,0,num)
    });
